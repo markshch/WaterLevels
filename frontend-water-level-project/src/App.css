@@ -1,0 +1,180 @@
+// add all CSS here!
+body {
+  
+}
+
+.container {
+  width: 100vw;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+img {
+  height: 253px;
+  margin-top: 20px;
+}
+
+.topOfPage {
+  display: flex;
+  flex-direction: row;
+}
+
+.bottomOfPage {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.information {
+  padding-left: 100px;
+  margin-right: 50px;
+  
+}
+
+.droughtImage {
+  padding-right: 100px;
+  
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(66, 145, 152);
+  padding-top: 5px;
+  padding-left: 100px;
+  height: 110px;
+}
+
+
+button {
+  background-color:  rgb(66, 145, 152);
+  border-radius: 10px;
+  color: white;
+  height: 40px;
+  width: 125px;  
+}
+
+canvas {
+  height: 300px;
+  width: 400px;
+  margin-right: 100px;
+}
+
+.lakeDisplay {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  padding-left: 100px;
+  width: 50vw;
+}
+
+.monthPicker {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 5%;
+  padding-right: 100px;
+  width: 50vw;
+}
+
+#monthButton {
+  background-color: white;
+  border-radius: 0px;
+  border-color: lightgrey;
+  color: grey;
+  width: 200px;
+  text-align: left;
+}
+
+
+@media screen and (max-width:900px) {
+  .header {
+    justify-content: center;
+    padding-left: 0px;
+    padding-top: 5px;
+    height: auto;
+    width: 100%;
+    flex-flow: wrap;
+  }
+
+  
+  .topOfPage {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .information {
+    padding-left: 0px;
+    margin-right: 0px;
+  }
+
+  img {
+    margin-bottom: 15px;
+    
+  }
+  
+  .droughtImage {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0px;
+    width: auto;
+    margin-bottom: 20px;
+    
+  }
+
+  .bottomOfPage {
+    padding-left: 15%;
+    padding-right: 15%;
+    flex-direction: column-reverse;
+  }
+
+  .lakeDisplay {
+    padding-left: 0px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #chart-container {
+    width: 100%;
+  }
+
+  canvas {
+    height: 300px;
+    width: 400px;
+    padding-left: 50px;
+  }
+
+  .monthPicker {
+    margin-top: 50px;
+    margin-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+  }
+  
+}
+
+/* below is not media screen for mobile (480px),
+we need to change the header orientation before
+mobile view port because the text is too large for
+some screen sizes (starting around 700px)
+*/
+@media screen and (max-width:700px) {
+
+  .header {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .line2 {
+    margin-top: -20px;
+  }
+}
